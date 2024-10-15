@@ -53,6 +53,12 @@ plt.show()
 
 """
     Use the kind argument to specify that you want a histogram:
-    
+        kind = 'hist'
+        
+        A histogram needs only one column.
 
 """
+
+df['Duration'].plot(kind='hist')
+
+plt.show()
