@@ -1,0 +1,58 @@
+
+"""
+    Pandas uses the plot() method to create diagrams.
+    We can use Pyplot, a submodule of the Matplotlib library to visualize the diagram on the screen.
+
+"""
+
+import matplotlib.pyplot as plt 
+import pandas as pd 
+df = pd.read_csv('G:/Data Analysis/Pandas/Learn/Pandas Correlations/data.csv')
+
+df.plot()
+
+plt.show()
+
+
+
+#---------------------------------------------------Scatter Plot---------------------------------------------
+
+"""
+
+    Specify that you want a scatter plot with the kind argument:
+    kind = 'scatter'
+    
+    A scatter plot needs an x- and a y-axis.
+
+"""
+
+import pandas as pd 
+import matplotlib.pyplot as plt 
+
+df = pd.read_csv('G:/Data Analysis/Pandas/Learn/Pandas Correlations/data.csv')
+
+df.plot(kind='scatter', x ='Duration', y ='Calories')
+
+plt.show()
+
+
+
+# A scatterplot where there are no relationship between the columns:
+import pandas as pd 
+import matplotlib.pyplot as plt
+
+df = pd.read_csv('G:/Data Analysis/Pandas/Learn/Pandas Correlations/data.csv')
+
+df.plot(kind='scatter', x='Duration', y = 'Maxpulse')
+
+plt.show()
+
+
+
+#----------------------------------------------------Histogram----------------------------------------------
+
+"""
+    Use the kind argument to specify that you want a histogram:
+    
+
+"""
